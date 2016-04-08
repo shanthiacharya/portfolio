@@ -1,0 +1,166 @@
+<!--
+<div class="ps-navigation">
+    <div class="ps-nav-wrapper">
+        <a href="#"  class="back"><span class="ps-nav-text">Prev Project</span></a>
+        <div class="fa-th-large"><a href="../index.html" rel="back" class="ps-back-link"><span class="ps-icon"></span> <span class="ps-back-text">Back to gallery</span></a></div>
+        <a href="2.html" rel="next" class="forward"><span class="ps-nav-text">Next project</span></a></div><div class="clear"></div></div>
+
+        <a class="close"><img src="../img/close.png" alt="close this project"></a>
+
+        <p> PartSnap Project</p>
+
+                <a class="close"><img src="../img/close.png" alt="close this project"></a>-->
+
+
+
+<html>
+
+<head>
+    <title>PartSnap | The Design Portfolio of Shanthi Acharya</title>
+
+    <!-- <link href="components/css/design.css" rel="stylesheet" type="text/css" />
+            <link href="components/css/display.css" rel="stylesheet" type="text/css" /> -->
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+            $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+            <a class='back small_caps' href='' alt='Previous Project'><div></div><span>Previous</span><br><span>Project</span></a><a class='forward small_caps' href='?id=72' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+            <a class="home small_caps" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                            <h2>Industrial eCommerce</h2>
+                            <h5 style="text-align: center"> iOS App for Field Service Engineers</h5>
+
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 style="font-weight: 'bold">Background</h3>
+                                <p class="larger">GE Power Conversion business wanted to enable their
+                                    field engineers, sales engineer and external customers
+                                    with a solution that will allow them to quickly identify
+                                    the machine parts and order it.
+                                    Parts identification took long cycle time due to several
+                                    constraints. They contacted us to design a mobile
+                                    solution to improve the customer experience and
+                                    reduce the cycle time.</p>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 style="font-weight: 'bold">Objective</h3>
+                                <p class="larger">GE Power Conversion business wanted to enable their
+                                    field engineers, sales engineer and external customers
+                                    with a solution that will allow them to quickly identify
+                                    the machine parts and order it.
+                                    Parts identification took long cycle time due to several
+                                    constraints. They contacted us to design a mobile
+                                    solution to improve the customer experience and
+                                    reduce the cycle time.</p>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 style="font-weight: 'bold">Task Flow</h3>
+
+                                <img src="../img/partsnap/taskflow.png">
+                            </div>
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 style="font-weight: 'bold">Initial Concepts</h3>
+
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 style="font-weight: 'bold">Wireframes</h3>
+
+                                <img src="../img/partsnap/search.png">
+                                <img src="../img/partsnap/searchparts-photo_search.png">
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

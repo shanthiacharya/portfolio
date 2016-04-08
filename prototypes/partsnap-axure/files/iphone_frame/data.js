@@ -1,0 +1,133 @@
+﻿$axure.loadCurrentPage({
+  "url":"iphone_frame.html",
+  "generationDate":new Date(1419966613166.08),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable",
+"PhotoSearch",
+"CustomerView",
+"GEInternalView",
+"custpanelopen",
+"ListtoRFQ"],
+  "page":{
+    "packageId":"ed3e200dce6744f8afdbd98aa1aea017",
+    "type":"Axure:Page",
+    "name":"iPhone Frame",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+      "onLoad":{
+        "description":"OnLoad",
+        "cases":[{
+            "description":"Case 1",
+            "isNewIfGroup":false,
+            "actions":[{
+                "action":"linkFrame",
+                "description":"Open Login in Main Frame",
+                "linkType":"frame",
+                "framesToTargets":[{
+                    "framePath":["c48d0fb7182746569273b5b3f536b9e9"],
+                    "target":{
+                      "targetType":"page",
+                      "url":"login.html",
+                      "includeVariables":true}}]}]},
+{
+            "description":"Case 2",
+            "isNewIfGroup":false,
+            "actions":[{
+                "action":"setFunction",
+                "description":"Set value of custpanelopen equal to &quot;0&quot;",
+                "expr":{
+                  "exprType":"block",
+                  "subExprs":[{
+                      "exprType":"fcall",
+                      "functionName":"SetGlobalVariableValue",
+                      "arguments":[{
+                          "exprType":"globalVariableLiteral",
+                          "variableName":"custpanelopen"},
+{
+                          "exprType":"stringLiteral",
+                          "value":"0",
+                          "stos":[]}]}]}},
+{
+                "action":"setFunction",
+                "description":"Set Variable",
+                "expr":{
+                  "exprType":"block",
+                  "subExprs":[]}}]}]}},
+    "diagram":{
+      "objects":[{
+          "id":"9aca1c8cffbe44e2ba83186ccda4c84f",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":11,
+              "y":2},
+            "size":{
+              "width":392,
+              "height":757},
+            "borderWidth":"-1"},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"1b50981be8324cecb4dafcc33300b6df",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":11,
+                  "y":2},
+                "size":{
+                  "width":392,
+                  "height":757},
+                "borderWidth":"-1"},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/iphone_frame/u0.png"}},
+{
+          "id":"c48d0fb7182746569273b5b3f536b9e9",
+          "label":"Main Frame",
+          "type":"inlineFrame",
+          "styleType":"inlineFrame",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":49,
+              "y":161},
+            "size":{
+              "width":320,
+              "height":460}},
+          "adaptiveStyles":{
+}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "9aca1c8cffbe44e2ba83186ccda4c84f":{
+      "scriptId":"u0"},
+    "1b50981be8324cecb4dafcc33300b6df":{
+      "scriptId":"u1"},
+    "c48d0fb7182746569273b5b3f536b9e9":{
+      "scriptId":"u2"}}});

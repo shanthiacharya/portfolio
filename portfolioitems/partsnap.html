@@ -1,0 +1,232 @@
+
+
+
+<html>
+
+<head>
+    <title>PartSnap | The Design Portfolio of Shanthi Acharya</title>
+
+    <!-- <link href="components/css/design.css" rel="stylesheet" type="text/css" />
+            <link href="components/css/display.css" rel="stylesheet" type="text/css" /> -->
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+          $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+          $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+            <a class='back small_caps' href='' alt='Previous Project'><div></div><span>Previous</span><br><span>Project</span></a><a class='forward small_caps wow fadeInDown delay-03s' href='2.html' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+            <a class="home small_caps main-nav" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                            <h2>PartSnap</h2>
+                            <h5 style="text-align: center"> iOS App for Field Service Engineers</h5>
+                            <div class="row text-center ">
+                            <img  src="../img/partsnap/partsnap_splash.png">
+                             </div>
+                            <div class="col-lg-6">
+                               <br> <br>
+                                <h3 >Challenge</h3>
+                                <p class="portfoliosectionbody">
+                                    GE Energy management customers were unable to quickly access machine parts information and
+                                    identify spare parts resulting in 6+ months cycle times, dissatisfied customers
+                                    and lost opportunities.
+                                   </p>
+                           </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Solution</h3>
+                                <p class="portfoliosectionbody"> To create a mobile app that will enable
+                                    field engineers, sales engineer and external customers
+                                    to identify the part by capturing images using smart phone camera. Captured images will be matched to the database of parts and the customer will be presented with parts information & availability and ability to submit their order.
+
+                                    </p>
+                             </div>
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >My Role</h3>
+                                <p class="portfoliosectionbody"> Project Leadership, Competitive Analysis, Wireframing and Prototyping in Axure, Usability testing along with Researcher, Presenting the finding and recommendations to stakeholders.
+                                </p>
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders" >APPROACH </div>
+                                <p class="portfoliosectionbody"> Our approach was to first conduct  workshop with the stakeholders to understand the business needs and identify who our target users were.
+                                    From our sessions, we got insights into the business flow of parts ordering and understood the priorities.
+
+                                </p>
+
+                            </div>
+
+
+
+                            <div class="col-lg-12 ">
+                                <br> <br>
+                                <h3 >Personas</h3>
+
+                                <p class="portfoliosectionbody">
+                                Our next step was to conduct
+                                1:1 interviews with target users to gain understanding of their needs and painpoints. We used that information to create the personas below.
+                               </p>
+                               <br/>
+                                <div class="text-center">
+                                <img   src="../img/partsnap/partsnappersonas.png">
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                            <h3 style="font-weight: 'bold"> Task Flow</h3>
+                                <p class="portfoliosectionbody">
+                                    We identified the key capabilities that the user would need such as Dashboard, Search, Camera, ability to mark as favorites, add to a list and submit for request. We created a high level task flow and this informed the information architecture and screens required.
+                                </p>
+                                <br/>
+                                <img  src="../img/partsnap/taskflow.png">
+                             </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 style="font-weight: 'bold">Sketches</h3>
+                                <p class="portfoliosectionbody">
+                                 Initial sketches helped explore how the information on the screen could be presented and what functionalities should be emphasized.
+                                </p>
+                                <br/>
+                                <img src="../img/partsnap/sketch.jpg">
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 style="font-weight: 'bold">Wireframe Iterations</h3>
+
+                                <img src="../img/partsnap/search.png">
+                                <img src="../img/partsnap/searchparts-photo_search.png">
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Usability testing</h3>
+                                <p class="portfoliosectionbody">
+                                   We conducted usability testing with a mix of sales engineers, parts engineers and field engineers. We had 3 sections of test tasks : First Impressions, Exploratory tasks and Directed tasks.
+                                   Users performed the tasks with the clicakble Axure prototype using thinking aloud protocol.
+                                </p>
+                                <br/>
+                                <blockquote class="blockquote-reverse">
+                                    <p class="portfoliosectionbody">"I want to organize parts catalog by the process areas that I deal with my everyday tasks."</p>
+                                    <footer> <cite title="Source Title">Field Engineer, GE Power Conversion.</cite></footer>
+                                </blockquote>
+                                <blockquote>
+                                    <p class="portfoliosectionbody"> "I need a wide range of information including Part#, Description, Technical specs, Brochures, Schematics and Photos so that the purchasing team identifies and orders the right part to the customers." </p>
+                                    <footer> <cite title="Source Title">Sales Engineer, GE Power Conversion.</cite></footer>
+                                </blockquote>
+                                <blockquote>
+                                    <p class="portfoliosectionbody"> "I want to know if someone is working on my request, what is the lead time,
+                                        tracking number and the
+                                       place where to pickup the order".
+
+                                    </p>
+                                    <footer> <cite title="Source Title">Sales Engineer, GE Power Conversion.</cite></footer>
+                                </blockquote>
+                            </div>
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Final Prototype</h3>
+
+                                <p class="portfoliosectionbody"> Check out the clickable prototype bellow to see it in action!</p>
+                                <br/> <br/>
+
+                                <br/>
+                                <div class="row text-center ">
+                                    <a   href="../prototypes/partsnap-axure/index.html"><img src="../img/partsnap/prototype.png"/> </a>
+
+
+                                 </div>
+
+                            </div>
+
+
+           </div>
+       </div>
+
+
+        </div>
+
+
+
+
+    </div>
+</div>
+</body>
+
+</html>

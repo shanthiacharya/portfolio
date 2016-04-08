@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <title>PartSnap | The Design Portfolio of Shanthi Acharya</title>
+
+    <!-- <link href="components/css/design.css" rel="stylesheet" type="text/css" />
+            <link href="components/css/display.css" rel="stylesheet" type="text/css" /> -->
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+            $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+            <a class='back small_caps' href='' alt='Previous Project'><div></div><span>Previous</span><br><span>Project</span></a><a class='forward small_caps' href='?id=72' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+            <a class="home small_caps" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                            <h2>Industrial Store</h2>
+                            <h5 style="text-align: center"> eCommerce Solution for Industrial Parts</h5>
+
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Background</h3>
+                                <p class="portfoliosectionbody">GE internal and external sales representatives have  difficult time using multiple web sites to order various parts.  They have to go through separate sites for various GE businesses. In addition equipment rentals and returns are handled in different sites.
+                                As a result their workflow gets complicated and time consuimg.</p>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Objective</h3>
+                                <p class="portfoliosectionbody">Develop an eCommerce solution that streamlines workflows and provides a unified user experience for eCommerce across GE Industries.
+                                </p>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >My Role</h3>
+                                <p class="portfoliosectionbody">  Competitive Analysis, Wireframing in Balsamiq,  Design Pattern Curation, Usability testing along with Researcher, Presenting the finding and recommendations to stakeholders.
+                                </p>
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 style="font-weight: 'bold">Task Flow</h3>
+
+
+                            </div>
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Site Map</h3>
+
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Wireframes</h3>
+
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Final Prototype</h3>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

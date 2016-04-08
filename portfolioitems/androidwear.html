@@ -1,0 +1,289 @@
+<html>
+
+<head>
+    <title>Android Wear | The Design Portfolio of Shanthi Acharya</title>
+
+
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+            $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+            <a class='back small_caps' href='' alt='Previous Project'><div></div><span>Previous</span><br><span>Project</span></a><a class='forward small_caps wow fadeInDown delay-03s' href='2.html' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+            <a class="home small_caps main-nav" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                            <h2>Android Wear</h2>
+                            <h5 style="text-align: center"> Health & Fitness App</h5>
+                            <div class="row text-center ">
+                                <img src="../img/androidwear/conceptpic.png">
+                            </div>
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Background</h3>
+                                <p class="portfoliosectionbody">
+                                    Wearables are an emerging technology and it offers new form of interaction and use cases. As part of my continuing education I took a course in Designing Advanced Mobile and Wearable User Experiences at UCSC Extension.
+                                </p>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Objective</h3>
+                                <p class="portfoliosectionbody">
+                                    Design and prototype a Smart Watch App using Android Wear design principles and test the concepts with end users.
+                                </p>
+                            </div>
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >My Role</h3>
+                                <p class="portfoliosectionbody"> Interaction and Visual Design using Android Wear patterns in  Illustrator, Prototyping using Invision and User Research.
+                                </p>
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Product Idea Brainstorming </h3>
+
+
+                                <p class="portfoliosectionbody"> Our smart watch app was targeted at busy individuals who wants to maintain healthy eating and exercise in the midst of their hectic schedule.
+                                    Watch app will work as a companion app with the mobile phone. User can store their preference for their diet and exercise in their mobile app and will receive contextual notifications and glanceable information on their watch app.
+                                    Below are some notes from our brainstorming sessions.
+                                </p>
+
+
+                                <br> <br>
+
+                                <img  class="col-lg-8" src="../img/androidwear/brainstorming.JPG">
+
+                            </div>
+
+
+
+                            <div class="col-lg-12 ">
+                                <br> <br>
+                                <h3 >Sketches</h3>
+
+                                <p class="portfoliosectionbody">
+                                   We created quick sketches to convey our product concepts and did preliminary paper prototype testing with target users.
+                                </p>
+                                <br/>
+                                <div >
+                                    <p class="portfoliosectionbody col-lg-6">
+                                        Scenario 1: Suggest - User wake up in the morning and the watch app provides healthy breakfast suggestions in the contextual notifications stream.
+                                        User can swipe right to see suggestions, nutrition information and video recipes.
+                                    </p>
+
+                                    <p class="portfoliosectionbody col-lg-6">
+                                        Scenario 2: Demand -
+
+                                        User can give a voice command to show how well are they doing on their exercise goals.  App will show their current activity info and provide contextual activities based on their preference and location.
+                                    </p>
+
+                                </div>
+
+                                <br/> <br/>
+                                <div class="text-center">
+                                    <img class="col-lg-6" src="../img/androidwear/sketch1.png">
+                                    <img  class="col-lg-6" src="../img/androidwear/sketch2.png">
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >User Research</h3>
+                                <p class="portfoliosectionbody">
+                                  Results of our preliminary paper prototype testing.
+                                </p>
+                                <br/>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                        <thead>
+                                        <tr>
+                                            <th class="success">What Worked</th>
+                                            <th class="danger">What didn't Work</th>
+
+                                        </tr>
+                                        </thead>
+
+                                        <tr>
+
+                                            <td>Concept was well received.</td>
+                                            <td>But skeptical about watching recipe videos on watch</td>
+
+
+                                        </tr>
+                                        <tr>
+
+                                            <td>They liked the food photographs in the sketches. </td>
+                                            <td>Cards needed better affordance for vertical vs. horizontal swipe </td>
+
+
+
+                                        </tr>
+                                        <tr>
+
+                                            <td>They mentioned that layout is clean and nice. </td>
+                                            <td>Nutritional facts information need to be readable.</td>
+
+
+
+                                        </tr>
+                                        <tr>
+
+                                            <td>Icons and Visualizations were clear and intuitive.</td>
+                                            <td>Need more actions for the food suggestions(Order , Recipe, Watch Video)</td>
+
+                                        </tr>
+
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 > Final Design</h3>
+                                <p class="portfoliosectionbody">
+                                    Based on the feedback we iterated on the design to incorporate the needs of the users.
+                                 Below are the illustrations of the final product design and interaction.</p>
+
+
+                                <br/>
+                                <div>
+                                    <p class="portfoliosectionbody col-lg-4">
+                                       Using <b>Cards</b> as the foundation it shows relevant information just when the user needs it. We used vibrant background imagery, app icon and notification text inside the card.
+                                    </p>
+
+                                    <p class="portfoliosectionbody col-lg-4">
+                                       We leveraged the  <b>2D Picker</b> pattern to allow the flexibility to swipe vertically to see list of options and then swipe horizontally to see detail information.</p>
+
+                                    <p class="portfoliosectionbody col-lg-4">
+                                       Tapping an <b>Action button </b> allows the action to be executed and shows the result of the action.                           </p>
+
+                                </div>
+                                <br/><br/>
+
+
+                                <img src="../img/androidwear/androiddesign.png">
+                            </div>
+
+
+
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Final Prototype</h3>
+                                <p class="portfoliosectionbody">
+                                    <a class="link animated fadeInUp delay-1s" href="http://invis.io/351XG4QW6">View Prototype</a>
+                                 </p>
+
+                                <p class="portfoliosectionbody"> Check out the clickable prototype bellow to see it in action!</p>
+                                <br/> <br/>
+
+                                <br/>
+                                <div class="row text-center ">
+                                    <a   href="http://invis.io/351XG4QW6"><img src="../img/watchdemo.png"/> </a>
+                               </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
