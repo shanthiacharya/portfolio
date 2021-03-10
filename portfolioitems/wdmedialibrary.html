@@ -1,0 +1,319 @@
+<html>
+
+<head>
+    <title>WD Media Library | The Design Portfolio of Shanthi Acharya</title>
+
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../favicon.ico" type="img/x-icon">
+
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+
+
+
+    <!-- Modernizr -->
+    <script src="../js/modernizr.js"></script>
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+            $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+            <a class='back small_caps' href='ecommerce.html' alt='Previous Project'><div></div><span>Previous</span><br><span>Project</span></a><a class='forward small_caps wow fadeInDown delay-03s' href='wdtvmobileintegration.html' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+            <a class="home small_caps main-nav" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                            <h2>WD Media Library</h2>
+                            <h5 style="text-align: center"> Store & Share Media across the home and Internet</h5>
+                            <div class="row text-center ">
+                                <img src="../img/WDVenuePhotosThumb2.PNG">
+                            </div>
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Background</h3>
+                                <p class="portfoliosectionbody">
+                                    WD network storage devices allow users to store and backup files from various devices including laptops, desktops, removable USB drives, and mobile devices. However primary access is through file servers and the onus is on the users to organize his/her media files.
+                                    This approach was suited only for technical experts, but we wanted to expand our target user base to non technical expert users by providing a user friendly media library.
+
+                                </p>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Objective</h3>
+                                <p class="portfoliosectionbody">
+                                    Design a next gen media library UI that can organize photos, music, videos and documents, provide rich media experience for viewing and allow easy sharing across the home and Internet.
+                                </p>
+                            </div>
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >My Role</h3>
+                                <p class="portfoliosectionbody"> Project Leadership, Competitive Analysis, Wireframing and Prototyping, Usability testing, Presenting the finding and recommendations to stakeholders and front end coding.
+                                </p>
+
+                            </div>
+
+
+
+
+
+                            <div class="col-lg-12  ">
+                                <br> <br>
+                                <h3 >Personas</h3>
+
+                                <p class="portfoliosectionbody">
+                                   Based on survey feedback and working with product marketing we crafted our 3 target personas including : Tech Positive (Knows enough about technology), Tech Expert (Advanced users)  and Tech Neutral (Less tech savvy)
+                                </p>
+                                <br/>
+                                <div >
+                                     <img class="col-lg-6" src="../img/wdmedialibrary/PersonasTechPositive.jpg">
+
+                                        <img class="col-lg-6" src="../img/wdmedialibrary/PersonaExpert.jpg">
+                                 </div>
+                                <div >
+
+                                   <img class="col-lg-6" src="../img/wdmedialibrary/PersonaTechNeutral.jpg">
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="col-lg-12  ">
+                                <br> <br>
+                                <h3 >Card Sorting </h3>
+
+                                <p class="portfoliosectionbody">
+                                    We conducted open card sorting with our target users. Based on their mental model we created information architecture for the system.
+                                </p>
+                                <br/>
+                                <div >
+                                    <img class="col-lg-6" src="../img/wdmedialibrary/cardsorting.png">
+                                    <img class="col-lg-6" src="../img/wdmedialibrary/cardsorting2.png">
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Wireframes</h3>
+
+                                <p class="portfoliosectionbody">
+                                    We created wireframes, taskflows for the functional areas of the UI including the content library,sharing media through social networks,  administrative section for device and user managements.
+                                    Below are some wireframes illustrations.
+
+                                 </p>
+                                    <br/>
+
+                                <div class="row">
+                                    <div class="col-md-4"><img src="../img/wdmedialibrary/wireframes/wireframe1.png"/> </div>
+                                    <div class="col-md-4"><img src="../img/wdmedialibrary/wireframes/wireframe2.png"/></div>
+                                    <div class="col-md-4"><img src="../img/wdmedialibrary/wireframes/wireframe3.png"/></div>
+
+
+                                </div>
+                                <br/>
+
+                                <div class="row">
+
+                                    <div class="col-md-4"><img src="../img/wdmedialibrary/wireframes/wireframesettings.png"/></div>
+                                    <div class="col-md-4"><img src="../img/wdmedialibrary/wireframes/wireframe4.png"/> </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Prototype</h3>
+                                <p class="portfoliosectionbody">
+                                    We created Adobe flex prototype to gauge the usability of main sections of the UI and newer design elements such as the radial menu for actions and creating an album collections.
+
+                                </p>
+
+
+                                <div class="flexslider col-lg-8 ">
+                                    <ul class="slides text-center">
+
+                                        <li>
+                                            <img src="../img/wdmedialibrary/prototype/PhotoView.PNG" />
+                                        </li>
+
+                                        <li>
+                                            <img src="../img/wdmedialibrary/prototype/MusicView.PNG" />
+                                        </li>
+
+
+                                        <li>
+                                            <img src="../img/wdmedialibrary/prototype/MusicGridview.PNG" />
+                                        </li>
+                                        <li>
+                                            <img src="../img/wdmedialibrary/prototype/VideoView.PNG" />
+                                        </li>
+
+                                        <li>
+                                            <img src="../img/wdmedialibrary/prototype/SettingsView.PNG" />
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Usability Testing</h3>
+                                <p class="portfoliosectionbody">
+                                    We conducted 2 rounds of usability testing and iteratively fixed the UI and flows. Below is an executive summary of the usability tests & findings.
+
+                                </p>
+
+                                <img  src="../img/wdmedialibrary/UsabilityTestingExecutiveSummary.jpg">
+
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 > Final Design</h3>
+                                <p class="portfoliosectionbody">
+                                I coded the front end styles and skins of the UI in Adobe Flex in collaboration with the UI Engineers. Below are some screenshots.
+
+                                </p>
+
+                                <div class="flexslider col-lg-8 ">
+                                    <ul class="slides text-center">
+
+                                        <li>
+                                            <img src="../img/wdmedialibrary/hifiscreenshots/PhotosRing2.PNG" />
+                                        </li>
+
+                                        <li>
+                                            <img src="../img/wdmedialibrary/hifiscreenshots/Share.PNG" />
+                                        </li>
+
+                                        <li>
+                                            <img src="../img/wdmedialibrary/hifiscreenshots/Slideshow.png" />
+                                        </li>
+                                        <li>
+                                            <img src="../img/wdmedialibrary/hifiscreenshots/Music.png" />
+                                        </li>
+
+
+                                        <li>
+                                            <img src="../img/wdmedialibrary/hifiscreenshots/Files.PNG" />
+                                        </li>
+
+
+                                        <li>
+                                            <img src="../img/wdmedialibrary/hifiscreenshots/Devices.PNG" />
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

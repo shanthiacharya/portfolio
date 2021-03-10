@@ -1,0 +1,495 @@
+<html>
+<head>
+<style>
+   #container {
+    background-color: #fff; 
+    height: 100%; 
+    width:100%;
+    padding: 0;
+    margin:0    
+    }    
+    
+    @font-face {
+      font-family: "GE Inspira Sans";
+      font-weight: normal;
+      font-style: normal;
+      src: url("fonts/GEInspiraSans-Regular-v01.eot");
+      src: url("fonts/GEInspiraSans-Regular-v01.eot?#iefix") format("embedded-opentype"), url("fonts/GEInspiraSans-Regular-v01.woff") format("woff"), url("fonts/GEInspiraSans-Regular-v01.ttf") format("truetype"); }
+
+    @font-face {
+      font-family: "GE Inspira Sans";
+      font-weight: normal;
+      font-style: italic;
+      src: url("fonts/GEInspiraSans-Italic-v01.eot");
+      src: url("fonts/GEInspiraSans-Italic-v01.eot?#iefix") format("embedded-opentype"), url("fonts/GEInspiraSans-Italic-v01.woff") format("woff"), url("fonts/GEInspiraSans-Italic-v01.ttf") format("truetype"); }
+
+    @font-face {
+      font-family: "GE Inspira Sans";
+      font-weight: bold;
+      font-style: normal;
+      src: url("fonts/GEInspiraSans-Bold-v01.eot");
+      src: url("fonts/GEInspiraSans-Bold-v01.eot?#iefix") format("embedded-opentype"), url("fonts/GEInspiraSans-Bold-v01.woff") format("woff"), url("fonts/GEInspiraSans-Bold-v01.ttf") format("truetype"); }
+
+   
+
+</style>
+</head>
+    
+
+    
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/highstock.js"></script>
+    <script type="text/javascript">
+
+        
+        
+$( document ).ready(function() { 
+            
+          Highcharts.theme = {
+            colors: ['#5DA5DA', '#FAA43A', '#60BD68', '#F17CB0', '#B2912F', '#64E572', 
+                     '#FF9655', '#FFF263', '#6AF9C4'],
+            chart: {
+                backgroundColor: '#ffffff',
+                 style: {
+                        fontFamily: 'GE Inspira Sans',
+                        fontWeight: 'normal',
+                        fontStyle: 'normal',
+                         fontSize: "12px"
+                    }
+            },
+          
+            legend: {
+                itemStyle: {
+                    fontFamily: 'GE Inspira Sans',
+                        fontWeight: 'normal',
+                        fontStyle: 'normal',
+                         fontSize: "15px"
+                },
+                itemHoverStyle:{
+                    color: 'gray'
+                }   
+            }
+        };
+
+        // Apply the theme
+        Highcharts.setOptions(Highcharts.theme);   
+            
+      
+     $(function() {
+         
+         
+    Highcharts.setOptions({
+            lang:{
+                rangeSelectorZoom:''
+            }
+        });     
+    
+    $('#container').highcharts ('StockChart',{  
+        
+        
+        
+         chart: {
+                renderTo: 'container',
+                alignTicks: false,
+                zoomType: 'xy',
+                resetZoomButton: {
+                position: {
+                    align: 'right', // by default
+                    verticalAlign: 'top', // by default
+                    x: -400,
+                    y: 10
+                },
+                relativeTo: 'chart'
+            },
+                spacing : [10,0,0,0],
+                //width: 100%
+            },
+       
+             credits: {
+                "enabled": false
+            },
+            exporting: {
+              enabled:false  
+            },    
+
+            rangeSelector: {
+               
+                  selected: 4,
+                  inputEnabled: true,
+                  inputPosition:{
+                    //align: 'left',
+                    x: -852,
+                   // y: 10,
+                },
+                
+            inputStyle: {
+                
+                 fontFamily: 'GE Inspira Sans',
+                 fontWeight: 'normal',
+                 fontStyle: 'normal',
+                 fontSize: "15px",
+                
+            },
+            buttonTheme: {
+                visibility: 'hidden'
+            },
+            labelStyle: {
+               // visibility: 'hidden'
+                       fontFamily: 'GE Inspira Sans',
+                        fontWeight: 'normal',
+                        fontStyle: 'normal',
+                         fontSize: "15px"
+            }
+            },
+        
+            
+            navigator: {
+                enabled: false
+            },
+             scrollbar: {
+            enabled: false
+            },
+
+            title: {
+                text: null
+            },
+            
+         legend: {
+                enabled: true,
+                layout: 'vertical',
+                padding:15,
+                align: 'right',
+                verticalAlign: 'top',
+                width:400,
+                lineHeight:80,
+                itemDistance:100,
+                itemWidth:100,
+                itemHeight:500,
+                symbolHeight: 200,
+                symbolWidth: 20,
+                symbolPadding:10,
+                //itemMarginBottom: 15,   
+                itemMarginTop: 20, 
+                y:-20,
+                x:55,
+                itemStyle: {
+               
+                    /*fontFamily: 'GE Inspira Sans',
+                    fontSize: "15px",
+                   */
+                     symbol: 'circle'
+            },
+                
+                title: {
+                    text: 'SELECTED TAGS',
+                    style: {
+                     fontSize: "15px",
+                    }
+                },
+                
+                
+              
+                
+                itemHiddenStyle: {
+                    color: '#cccccc'
+                }
+
+                
+               
+                
+           
+            },
+           
+       
+        xAxis: [{
+              type: 'datetime',
+           /* categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            crosshair: true*/
+        }],
+        yAxis: [{ // Primary yAxis
+            
+            lineWidth: 2,
+            // gridLineWidth: 0,
+            labels: {
+                //format: '{value}°C',
+                style: {
+                    color: Highcharts.getOptions().colors[0]
+                }
+            },
+            title: {
+                text: 'Current',
+                style: {
+                    color: Highcharts.getOptions().colors[0]
+                }
+            },
+            opposite: false
+
+        }, { // Secondary yAxis
+             lineWidth: 2,
+            gridLineWidth: 0,
+            title: {
+                text: 'Speed',
+                style: {
+                    color: Highcharts.getOptions().colors[1]
+                }
+            },
+            labels: {
+             //   format: '{value} mm',
+                style: {
+                    color: Highcharts.getOptions().colors[1]
+                }
+            },
+             opposite: false
+
+        }, { // Tertiary yAxis
+             lineWidth: 2,
+            gridLineWidth: 0,
+            title: {
+                text: 'Bearing Temperature',
+                style: {
+                    color: Highcharts.getOptions().colors[2]
+                }
+            },
+            labels: {
+              //  format: '{value} mb',
+                style: {
+                    color: Highcharts.getOptions().colors[2]
+                }
+            },
+            opposite: true
+        },{ // Fourth yAxis
+             lineWidth: 2,
+            gridLineWidth: 0,
+            title: {
+                text: 'Winding Temperature',
+                style: {
+                    color: Highcharts.getOptions().colors[3]
+                }
+            },
+            labels: {
+              //  format: '{value} mb',
+                style: {
+                    color: Highcharts.getOptions().colors[3]
+                }
+            },
+            opposite: true
+        }
+               
+               
+               
+               
+               
+               
+               
+        ],
+        tooltip: {
+            shared: true
+        },
+        
+        
+        
+        plotOptions: {
+                series: {
+                    cursor: 'pointer',
+                     pointStart: Date.UTC(2015, 8, 25,8,0,0),
+                     dateTimeLabelFormats: {
+                      //minute:"%A, %b %e, %H:%M"
+                         //minute: '%H:%M',
+                    },
+                    
+                    pointInterval: 60 * 1000 ,
+                     //pointInterval: 1 * 3600 * 60 *1000, // one hour
+                     point: {
+                        events: {
+                            click: function (e) {
+                                hs.htmlExpand(null, {
+                                    pageOrigin: {
+                                        x: e.pageX || e.clientX,
+                                        y: e.pageY || e.clientY
+                                    },
+                                    headingText: this.series.name,
+                                    maincontentText: Highcharts.dateFormat('%A, %b %e, %Y', this.x) + ':<br/> ' +
+                                        this.y + ' visits',
+                                    width: 200
+                                });
+                            }
+                        }
+                    },
+                    marker: {
+                        lineWidth: 0,
+                         radius: 1,
+                        symbol:'circle',
+                         states: {
+                        hover: {
+                            radius:5
+                        }
+                    }
+                         
+                    }
+                }
+            },
+        
+        
+        
+        
+       
+        series: [
+            
+            {
+                    data: [],
+                    name: ' Current'+ '<br>' + '<span style="font-style: italic; font-size:12px; color:#7C7C84">  Amp </span>',
+                    type: 'scatter',
+                    color: '#5DA5DA',
+                    marker: {
+                        symbol: 'circle',
+                        radius: 15,
+                    }
+                }, 
+            
+            {
+            name: 'Current',
+            type: 'line',
+            yAxis: 0,
+            data: [4,6,165,414,590,448,438,420,464,476,476,458,451,436,447,446,454,447,418,427,425,444,445,447,428,421,425,437,355,294,254,234,291,337,429,476,477,473,468,513,541,542,527,501,450,370,284,255,245,286,333,356,392,406,406,395,373,366,375,337,312,343,345,348,376,377,386,378,363,357,353,363,386,422,442,439,442,454,473,466,454,437,433,430,437,444,443,436,422,432,438,446,432,428,408,427,436,437,447,429],
+            tooltip: {
+                valueSuffix: ' Amp'
+            },
+                     linkedTo: ':previous'
+
+           }, 
+            
+             {
+                    data: [],
+                    name: 'Speed'+ '<br>' + '<span style="font-style: italic; font-size:12px; color:#7C7C84">RPM </span>',
+                    type: 'scatter',
+                    color: Highcharts.getOptions().colors[1],
+                    marker: {
+                        symbol: 'circle',
+                        radius: 15,
+                    }
+                }, 
+            
+            {
+            name: 'Speed',
+            type: 'line',
+            yAxis: 1,
+            data: [12,-39,-211,181,989,1177,1315,1242,1276,1353,1443,1494,1531,1508,1495,1474,1518,1581,1553,1531,1480,1470,1483,1540,1558,1535,1485,1446,1260,980,630,224,-95,-345,-376,-273,-176,-108,-223,-245,-180,-72,15,176,376,530,476,380,285,275,351,434,588,783,1008,1241,1400,1507,1633,1655,1534,1519,1490,1429,1433,1435,1478,1524,1547,1549,1497,1443,1331,1328,1391,1423,1404,1386,1439,1499,1542,1547,1543,1518,1494,1495,1527,1554,1517,1483,1471,1513,1546,1572,1508,1481,1472,1461,1516,1556],
+            marker: {
+                enabled: false
+            },
+            
+            tooltip: {
+                valueSuffix: ' RPM'
+            },
+                  linkedTo: ':previous'
+
+        }, 
+            
+            {
+                    data: [],
+                    name: 'Bearing Temperature'+ '<br>' + '<span style="font-style: italic; font-size:12px; color:#7C7C84">Deg C </span>',
+                    type: 'scatter',
+                    color: Highcharts.getOptions().colors[2],
+                    marker: {
+                        symbol: 'circle',
+                        radius: 15,
+                    }
+                }, 
+            
+            {
+            name: 'Bearing Temperature',
+            type: 'line',
+            yAxis: 2,    
+            data: [25,25,25,25,26,27,28,29,30,32,33,34,35,36,37,37,38,39,40,40,41,42,42,43,43,44,44,44,44,44,43,43,42,41,39,38,38,37,36,35,35,34,34,33,33,33,33,33,33,32,32,32,32,33,33,34,34,35,36,37,37,37,38,38,39,39,40,40,41,41,41,42,42,42,43,43,44,44,44,45,45,46,46,47,47,47,47,48,48,48,48,49,49,49,49,49,50,50,50,50],
+                
+                
+                
+            tooltip: {
+                valueSuffix: ' Deg C'
+            },
+                  linkedTo: ':previous'
+        },
+        
+        {
+                    data: [],
+                    name: 'Winding Temperature'+ '<br>' + '<span style="font-style: italic; font-size:12px; color:#7C7C84">Deg C </span>',
+                    type: 'scatter',
+                    color: Highcharts.getOptions().colors[3],
+                    marker: {
+                        symbol: 'circle',
+                        radius: 15,
+                    }
+                }, 
+            
+            {
+            name: 'Winding Temperature',
+            type: 'line',
+            yAxis: 3,    
+            data: [40,40,40,40,42,43,44,46,47,49,50,52,54,55,57,58,60,61,63,64,66,67,68,70,71,73,74,75,76,76,76,76,76,75,74,73,73,72,72,71,71,70,70,70,70,70,70,70,70,70,70,70,70,71,71,72,73,74,76,77,78,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117],
+                
+                
+                
+            tooltip: {
+                valueSuffix: ' Deg C'
+            },
+                  linkedTo: ':previous'
+        }
+        
+        
+        
+        
+        
+        
+        ]},function(chart){
+            
+            var width = chart.chartWidth;
+                console.log ("Width: " + width);
+                
+             //chart.renderer.path(['M', 773, 650, 'V', 0])
+             
+             chart.renderer.path(['M', width-350, 650, 'V', 0])
+            .attr({
+                'stroke-width': 1,
+                stroke: '#D1D0D8',
+                zIndex:1000
+            })
+              .add();
+             chart.renderer.path(['M', width-345, 33.5, 'H', width])
+            .attr({
+                'stroke-width': 1,
+                 stroke: '#D1D0D8',
+                zIndex:1003
+               
+            })
+            .add(); 
+             
+        
+         });
+        
+        
+       // });
+});               
+                    
+
+});
+    
+    
+    
+    
+    
+    </script>
+     
+
+
+
+	<body>
+	
+        <div id="container" style="height: 500px; min-width: 600px"></div>
+       
+	</body>
+    
+    
+   
+    
+</html>

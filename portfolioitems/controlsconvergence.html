@@ -1,0 +1,214 @@
+<html>
+
+<head>
+    <title>GE Controls Convergence | The Design Portfolio of Shanthi Acharya</title>
+
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../favicon.ico" type="img/x-icon">
+
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+
+
+
+    <!-- Modernizr -->
+    <script src="../js/modernizr.js"></script>
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+            $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+            <a class='back small_caps' href='seastreamdataviz.html' alt='Previous Project'><div></div><span>Previous</span><br><span>Project</span></a><a class='forward small_caps' href='ecommerce.html' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+            <a class="home small_caps" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                            <h2>GE PlantWorks</h2>
+                            <h5 style="text-align: center"> Controls Application UX </h5>
+
+                            <div class="text-center row ">
+                            <img src="../img/plantworks/plantworkstopimage.png" width="50%" />
+
+                            </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Background</h3>
+                                <p class="portfoliosectionbody">
+                                  GE Controls sells hardware and software tools for Plant Automation. Current software controls tools do not allow for systems to integrate quickly and easily.
+                                   Customers need to handle multiple tools, versions and their issues upgrades. Many engineering hours are wasted in setting up systems and requisition effort.
+
+                                </p>
+
+                            </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Goals</h3>
+                                <p class="portfoliosectionbody">
+                                  Create an integrated tool suite that provides a collaborative workspace and reduces effort and rework in controls SW engineering, controls SW integration and testing, and commissioning. </p>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >My Role</h3>
+                                <p class="portfoliosectionbody"> Research Participation, Interaction Design Lead and Prototyping, Collaboration with visual designer.
+                                </p>
+
+                             </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+
+                                <div class="portfoliosectionheaders" >APPROACH</div>
+                                <p class="portfoliosectionbody">
+                                Showcase the future product vision to get customer validation and feedback.
+                                We moved from sketch to code quickly and created a site that provided a clear vision and roadmap.
+                              </p>
+
+                            </div>
+
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Final Design</h3>
+
+
+                               <p class="portfoliosectionbody">
+                                Final design created in code based on the GE Marketing Design System.
+                                </p>
+                                  <!--<div class="col-md-6"><img src="../img/plantworks/personas.png"/></div>
+                                <div class="col-md-6"><img src="../img/plantworks/solutionintegratorpersona.png"/> </div>
+                                <div class="col-md-6"><img src="../img/plantworks/overviewdiagram.png"/> </div> -->
+
+                            </div>
+
+                            <div class="flexslider col-lg-8 ">
+                                <ul class="slides ">
+                                  <li>
+                                      <img src="../img/plantworks/homepage.png"/>
+                                  </li>
+
+                                    <li>
+                                      <img src="../img/plantworks/overviewdiagram.png"/>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                                <div class="flexslider col-lg-8 ">
+                                    <ul class="slides ">
+
+                                        <li>
+                                            <img src="../img/plantworks/personas.png"/>
+                                        </li>
+                                        <li>
+                                            <img src="../img/plantworks/solutionintegratorpersona.png"/>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Outcome </h3>
+                                <p class="portfoliosectionbody">
+                                  This saved as a great tool to collect feedback and build consensus with the vision.
+                                </p>
+
+                            </div>
+
+
+
+
+                           </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                <!--</div>-->
+
+
+
+
+
+           </section>
+
+        </div>
+    </div>
+</body>
+
+</html>

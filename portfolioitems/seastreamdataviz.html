@@ -1,0 +1,198 @@
+
+
+
+<html>
+
+<head>
+    <title>Seastream Insight | The Design Portfolio of Shanthi Acharya</title>
+
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../favicon.ico" type="img/x-icon">
+
+
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+                $(function(){
+                 $("#chartsingle").load("../prototypes/charts/single/index.html");
+               });
+
+          $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+          $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+
+
+
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+          <a class='back small_caps' href='bppoaapm.html' alt='Previous Project'><div></div><span>Previous</span><br><span>Project</span></a><a class='forward small_caps' href='controlsconvergence.html' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+
+            <a class="home small_caps main-nav" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                            <h2>Seastream Insight</h2>
+                            <h5 style="text-align: center"> Monitoring and Analytics Application</h5>
+                            <div class="row text-center ">
+                            <img  src="../img/seastream/mainheadersplash.png">
+                             </div>
+                            <div class="col-lg-6">
+                               <br> <br>
+                                <h3 >Challenge</h3>
+                                <p class="portfoliosectionbody">
+                                    GE Marine wanted to provide their marine operators and analyst with insightful data driven analytics that empowers them
+                                    to make quick decisions and improve operational efficiency and reduced downtime.
+
+                                   </p>
+                           </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Solution</h3>
+                                <p class="portfoliosectionbody"> Critical data, relating to the condition of individual components, is collected from multiple existing networks across the vessel. This data is then processed and translated into clear, insightful information to give the drilling contractor total situational awareness.
+                                    </p>
+                             </div>
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >My Role</h3>
+                                <p class="portfoliosectionbody"> Interaction Design and Prototyping in Code for the Analysis section.
+                                </p>
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders" >APPROACH </div>
+                                <p class="portfoliosectionbody"> Our approach was to first interview analyst to understand their analysis needs and review the data.
+                                    Based on that we came up with 2 approaches. First scenario was to visualize the data as an overlay chart so that they can understand where <thead>
+                                      problem originated and what was the subsequent impact.  Second scenario was to visualize the data in a stcked fashion to understand what happened at the particulat point in time.
+
+                                      For both scenarios I used  <a href="http://www.highcharts.com/demo"> Highcharts </a> to create data visualization and live demo in code won customer confidence and validation.
+
+                                    </thead>
+                                </p>
+
+                            </div>
+
+
+
+
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Final Prototype</h3>
+
+                                <p class="portfoliosectionbody"> Check out the final code prototype below to see it in action!</p>
+                                <br/> <br/>
+
+                                <br/>
+                                <div id ="chartsingle">
+
+                                </div>
+
+                                <div class="row">
+
+                                  <div class="col-md-6">
+
+                                    <h3 >Single Overlay Chart</h3>
+                                     <a  href="../prototypes/charts/single/index.html" target="_blank"><img src="../img/seastream/single.png"/> </a>
+                                    </div>
+
+                                    <h3 >Synchronous Stacked Chart</h3>
+                                  <div class="col-md-6">
+                                    <a   href="../prototypes/charts/stacked/index.html" target="_blank"> <img src="../img/seastream/stackedchart.png"/></a>
+                                  </div>
+
+                                  </div>
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Outcome </h3>
+                                <p class="portfoliosectionbody"> This was demonstrated at the Offshore Technology Conference and was well received by customers.
+                                </p>
+
+                            </div>
+
+
+           </div>
+       </div>
+
+
+        </div>
+
+
+
+
+    </div>
+</div>
+</body>
+
+</html>

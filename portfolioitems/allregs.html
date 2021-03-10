@@ -1,0 +1,342 @@
+<html>
+
+<head>
+    <title>AllRegs | The Design Portfolio of Shanthi Acharya</title>
+
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../favicon.ico" type="img/x-icon">
+
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+    <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css">
+
+
+
+    <!-- Modernizr -->
+    <script src="../js/modernizr.js"></script>
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+            $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+
+            $('.image-link').magnificPopup({type:'image',closeOnContentClick:true});
+
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+                <a class='forward small_caps' href='partsnap.html' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+            <a class="home small_caps" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                          <h2>AllRegs</h2>
+                          <h5 style="text-align: center">Responsive Design for Mortgage Information Provider Site</h5>
+                            <div class="text-center row ">
+                            <img  src="../img/allregs/allregssplashscreen.png">
+
+                            </div>
+
+                            <div class="col-lg-6">
+                               <br> <br>
+                                <h3 >Background</h3>
+                                <p class="portfoliosectionbody">
+                                    AllRegs is the leading information provider for the mortgage industry, providing guidelines,
+                                    compliance information, content and business intelligence for the mortgage lending industry.
+                                    While it provides the most needed content for mortgage professionals, the site was very difficult to search
+                                    and navigate for the required information. This caused user frustration and significant risk for renewal and subscription service.
+                                   </p>
+                           </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Solution</h3>
+                                <p class="portfoliosectionbody"> Our approach was to redesign the search experience to easily find content,
+                                  improve and extend the content viewing experience by shifting
+                                  to a responsive design framework that can be device agnostic and completely revamp the UI with a fresh modern look and feel.
+                                </p>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >My Role</h3>
+                                <p class="portfoliosectionbody"> Design Leadership, Wireframing, Visual Design and Prototyping, Collaboration with product owners and engineering teams.
+                                </p>
+
+                             </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+
+                                <div class="portfoliosectionheaders" >APPROACH </div>
+                                <p class="portfoliosectionbody"> Our approach was broken down into 4 phases:<br/>
+                                  1. Evaluate the current website. <br/>
+                                  2. Understand the needs and pain points through surveys and user interviews. <br/>
+                                  3. Create wireframe concepts and rapid iteration with user feedback and stakeholders<br/>
+                                  4. Move into high fidelity and work with development team on specs and implementation<br/>
+
+
+                                  <br/>
+                                    <h3 >Key Challenges</h3>
+                                    <p class="portfoliosectionbody">
+                                    1.  <b>Hard to Search - </b> Searching for content is a primary task and this main functionality was the hardest to use.
+                                      <br/>
+                                    2.  <b>Inefficient Search Results - </b>Lack of filters and poor formatting of search results made search less efficient.
+                                     <br/>
+                                    3.  <b>Inability to track documents - </b> Users want to maintain a research trail and there was no ability to organize and save documents viewed.
+                                     <br/>
+                                    4.  <b>Outdated Information - </b>Users primarily want the latest information, but suffered information overload with intermingled old and new content.
+                                     <br/>
+                                    5.  <b>Poor Readability - </b>Site look and feel was outdated and the UI needed to be revamped for better readability and usability.
+                                     <br/>
+                                    6.  <b>Lack of Personalization - </b>Home page content was not relevant for most users and they wanted ability to customize it to their needs.
+
+                                  </p>
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3> Site Map and Information Architecture</h3>
+                                <p class="portfoliosectionbody">
+                                  We mapped the existing site information architecture and found that the search feature was not integrated well. Several duplicate features was scattered through the site.
+                                  Primary navigation needed to be refined and utility features needed to be moved under the user accounts section.
+                                </p>
+                                <br/>
+                                <a class="image-link" href="../img/allregs/allregssitemap.png"><img class="image-link"  src="../img/allregs/allregssitemap_small.png"></a>
+
+                             </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Wireframe Iterations</h3>
+                                <br> <br>
+                                <p class="portfoliosectionbody">
+                                  Concept wireframes were tested to obtain end user feedback and further iterated to refine the solution.
+                                </p>
+                                <img src="../img/allregs/allregswireframes.png">
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3> Experience #1: Home Page</h3>
+                                <p class="portfoliosectionbody"> Improved the readability and usability with use of white space and removed visual clutter. Incorporated card based widgets that can adapt easily
+                                  to responsive design. Ability to access frequently used content with Recently Viewed and Favorites.
+                                 </p>
+                                <br> <br>
+                                <a class="image-link" href="../img/allregs/before-after/Home -BeforeAfter.png"><img class="image-link"  src="../img/allregs/before-after/Home -BeforeAfter.png"></a>
+                                <br> <br>
+                                <br> <br>
+                                <h3> Experience #2: Personalization</h3>
+                                <p class="portfoliosectionbody"> Incorporated the abilitiy to customize and personalize it to individual customer needs, a key feature that was requested in the customer interviews.
+                                 </p>
+                                <br> <br>
+                                <a class="image-link" href="../img/allregs/before-after/personalize.png"><img class="image-link"  src="../img/allregs/before-after/personalize.png"></a>
+
+
+                                <br> <br>
+                                <br> <br>
+                                <h3> Experience #3: Recent and Saved Searches </h3>
+                                <a class="image-link" href="../img/allregs/before-after/recentsnadsavedsearches.png"><img class="image-link"  src="../img/allregs/before-after/recentsnadsavedsearches.png"></a>
+                                <br> <br>
+                                <br> <br>
+                                <h3> Experience #4: Search - Filters</h3>
+                                <a class="image-link" href="../img/allregs/before-after/Search-beforeafter.png"><img class="image-link"  src="../img/allregs/before-after/Search-beforeafter.png"></a>
+
+                                <br> <br>
+                                <br> <br>
+                                <h3> Experience #5: Search Results</h3>
+                                <a class="image-link" href="../img/allregs/before-after/SearchResults-BeforeAfter.png"><img class="image-link"  src="../img/allregs/before-after/SearchResults-BeforeAfter.png"></a>
+
+
+                                <br> <br>
+                                <br> <br>
+                                <h3> Experience #6: Table of Contents</h3>
+                                <a class="image-link" href="../img/allregs/before-after/TableofContents-beforeafter.png"><img class="image-link"  src="../img/allregs/before-after/TableofContents-beforeafter.png"></a>
+
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3> Desktop, Tablet and Mobile - Responsive  Navigation</h3>
+
+                                <p class="portfoliosectionbody">
+                                  Based on the device context navigation adapts responsively. On larger screens shows full length navigation, medium sized shows partial navigation with dropdown and on small size navigation shows stacked.
+                                </p>
+                                  <br>
+                                <a class="image-link" href="../img/allregs/Responsivenavigation.png"><img class="image-link"  src="../img/allregs/Responsivenavigation.png"></a>
+
+
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Final Designs</h3>
+
+
+                                <br> <br>
+
+                                <!-- <div class="col-lg-12"> -->
+
+                                <div class="flexslider col-lg-8 ">
+                                    <ul class="slides text-center">
+
+                                        <li>
+                                            <img src="../img/allregs/SearchResults.png" />
+                                        </li>
+                                        <li>
+                                            <img src="../img/allregs/DocumentFavorites.png" />
+                                        </li>
+                                        <li>
+                                            <img src="../img/allregs/DocumentHighightActions.png" />
+                                        </li>
+                                        <li>
+                                            <img src="../img/allregs/DocumentHighlightEmail.png" />
+                                        </li>
+                                        <li>
+                                            <img src="../img/allregs/DocumentHighlightNote.png" />
+                                        </li>
+                                    </ul>
+                                </div>
+                               <!-- </div> -->
+
+
+                                <br> <br>
+
+
+                            <div class="flexslider col-lg-8 ">
+                                <ul class="slides text-center">
+                                  <li>
+                                        <img src="../img/allregs/ComplianceCalendar.png" />
+                                    </li>
+
+                                    <li>
+                                        <img src="../img/allregs/ComplianceDisclosureMatrix.png" />
+                                    </li>
+
+
+                                    <li>
+                                        <img src="../img/allregs/CompliancePending Legislation.png" />
+                                    </li>
+                                    <li>
+                                        <img src="../img/allregs/Report Builder-1-Choose States.png" />
+                                    </li>
+                                    <li>
+                                        <img src="../img/allregs/Report Builder-2- Choose Topics.png" />
+                                    </li>
+                                    <li>
+                                        <img src="../img/allregs/Report Builder-3- Choose Layout.png" />
+                                    </li>
+                                    <li>
+                                        <img src="../img/allregs/Report Builder-4- Summary.png" />
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Outcome </h3>
+                                <p class="portfoliosectionbody"> Showcasing the responsive design and ability to view across multidevice with a modern user experience played a key role in getting customer wins for new subscription and renewal of existing subscription.
+                                  Prototype and mockups were demoed to several customers and partners during conferences and workgroup meetings which served as a great selling tool.
+
+                            </div>
+
+
+
+
+
+
+
+
+
+                           </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                <!--</div>-->
+
+
+
+
+
+           </section>
+
+        </div>
+    </div>
+</body>
+
+</html>

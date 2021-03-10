@@ -1,0 +1,192 @@
+<html>
+
+<head>
+    <title>WD TV Mobile Integration | The Design Portfolio of Shanthi Acharya</title>
+
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../favicon.ico" type="img/x-icon">
+
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+            $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+            <a class='back small_caps' href='wdmedialibrary.html' alt='Previous Project'><div></div><span>Previous</span><br><span>Project</span></a><a class='forward small_caps wow fadeInDown delay-03s' href='androidwear.html' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+            <a class="home small_caps main-nav" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                            <h2>WD TV Mobile Integration</h2>
+                            <h5 style="text-align: center"> Store & Share Photos </h5>
+                            <div class="row text-center ">
+                                <img src="../img/WDTV.png">
+                            </div>
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Background</h3>
+                                <p class="portfoliosectionbody">
+
+                                    Mobile phones are extremely versatile and a growing numbers of consumers primarily use their camera phone for capturing images, video and sharing with others. However this puts an increasing demand for storage on their phones. We wanted to use this opportunity and connect smart phones to WD TV Live media player to utilize the extra storage and have a rich viewing experience on their home entertainment system.
+                                </p>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Objective</h3>
+                                <p class="portfoliosectionbody">
+                                    Design flows and screens for  WD TV player and Smart Phone integration to provide a seamless and secure cross screen experience.
+                                </p>
+                            </div>
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >My Role</h3>
+                                <p class="portfoliosectionbody"> Interaction Design, Prototyping, Collaboration with Engineering.
+                                </p>
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Task Flow</h3>
+                                <p class="portfoliosectionbody"> 
+                                    <img src="../img/wdtv/WDTV_Orion_Flow.jpg">
+                                </p>
+
+                            </div>
+
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 > Wireframes</h3>
+                                <p class="portfoliosectionbody">
+
+                                 Below are the illustrations of the screens that the user would go through in setting up the pairing with their phone. </p>
+
+                                <h3 > WD TV Screens </h3>
+
+                                <br/>
+                                <div class="row">
+                                    <div class="col-md-6"><img src="../img/wdtv/WDTV_StartScreen.jpg"/> </div>
+                                    <div class="col-md-6"><img src="../img/wdtv/WDTV_SetupScreen.jpg"/></div>
+                                    <div class="col-md-6"><img src="../img/wdtv/WDTV_Mobilesharingscreen.jpg"/></div>
+                                    <div class="col-md-6"><img src="../img/wdtv/WDTV_Addmobiledevice.jpg"/> </div>
+                                    <div class="col-md-6"><img src="../img/wdtv/WDTV_Instruction.jpg"/></div>
+                                    <div class="col-md-6"><img src="../img/wdtv/WDTV_ActivationCode.jpg"/></div>
+                                    <div class="col-md-6"><img src="../img/wdtv/WDTV_DeviceConnected.jpg"/> </div>
+
+                                </div>
+
+
+                                <br/>
+
+
+                        </div>
+
+                            <div class="col-lg-12">
+
+                            <h3 >Mobile App Screens </h3>
+                                <p class="portfoliosectionbody">
+                                    Initial Setup and Pairing flow with the network device.</p>
+
+
+                                <div class="col-lg-12"><img src="../img/wdtv/WDPhotosOrionsetup.png"/> </div>
+
+
+                                <br/><br/>
+                                <br/><br/>
+                                <p class="portfoliosectionbody">
+                                    Upload Photos flow to the network device.</p>
+
+
+                                <div class="col-lg-12"><img src="../img/wdtv/uploadflow.png"/></div>
+
+                          </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<html>
+
+<head>
+    <title>Plant Operation Advisor | The Design Portfolio of Shanthi Acharya</title>
+
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../favicon.ico" type="img/x-icon">
+
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+
+
+
+    <!-- Modernizr -->
+    <script src="../js/modernizr.js"></script>
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+            $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+            <a class='back small_caps' href='icldemo.html' alt='Previous Project'><div></div><span>Previous</span><br><span>Project</span></a><a class='forward small_caps' href='seastreamdataviz.html' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+            <a class="home small_caps" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                            <h2>Plant Operation Advisor</h2>
+                            <h5 style="text-align: center"> Asset Management Application </h5>
+
+                            <div class="text-center row ">
+                            <img src="../img/bppoa/bppoadashboardheroimage.png" width="50%" />
+
+                            </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Background</h3>
+                                <p class="portfoliosectionbody">
+                                  GE Oil& Gas wanted to improve the profitability and revenue of their
+                                  customer's offshore operation by reducing unplanned production downtime.
+                                  They needed a solution that reduces the risk by providing an early warning and advisory system for facility health.
+                                </p>
+
+                            </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Goals</h3>
+                                <p class="portfoliosectionbody">
+                                Design and Co-Create software solution with customers to provide holistic view of their platform in the Gulf of Mexico.
+                                Leverage and extend GE's APM framework to create a new solution that will provide process surveillance and predictive analytic tools to provide early warnings of potential facility issues.
+                                </p>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >My Role</h3>
+                                <p class="portfoliosectionbody"> Research Participation, Customer Engagement, Design Lead (Stakeholder Coordination, Wireframing, Design Review and Collaboration with Framework team)
+                                </p>
+
+                             </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+
+                                <div class="portfoliosectionheaders" >Challenges</div>
+                                <p class="portfoliosectionbody"> We had a very aggressive timeline while we were transitioning from a project to product framework.
+                                  This required a one week design sprint going from requirements, Rapid sketching session with customer/ internal stakeholders and Wireframing and design review with framework team for product consistency and provide sprint drops to dev team.
+                                  <br/>
+                                  <br/>
+                                    <h3 >APPROACH </h3>
+                                <p class="portfoliosectionbody">
+                                  <p class="portfoliosectionbody"> Below is our design process to get customer feedback and align with APM (Asset Performance Management) framework.</p>
+                                  <img src="../img/bppoa/DesignProcess.jpg"  />
+
+                                </p>
+
+                            </div>
+
+
+
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Sketches</h3>
+                                <p class="portfoliosectionbody"> Iterative Sketches for rapid exploration and review with customers. </p>
+
+                                <div class="col-md-6"><img src="../img/bppoa/Dashboardsketches1.png"/></div>
+                                <div class="col-md-6"><img src="../img/bppoa/Dashboardsketches2.png"/></div>
+
+                            </div>
+
+
+                            <!-- <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Wireframes & Taskflows</h3>
+
+
+                            </div> -->
+
+
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Final Design</h3>
+
+                                <br> <br>
+                                <p class="portfoliosectionbody"> Our design system is Card-based UX approach which groups related information in  a container.
+                                Each card provides a high level information and the user can drill down to the dedicated views from the dashboard. </p>
+                              <div class="flexslider col-lg-8 ">
+                                <ul class="slides ">
+
+                                  <li>
+                                      <img src="../img/bppoa/bppoadashboard.png" />
+                                  </li>
+
+                                  <li>
+                                      <img src="../img/bppoa/bppoadashboardlevel3.png" />
+                                  </li>
+                                  <li>
+                                      <img src="../img/bppoa/dashboardprocesssurveillance.png" />
+                                  </li>
+                                  <li>
+                                      <img src="../img/bppoa/analysis.png" />
+                                  </li>
+                                    <li>
+                                        <img src="../img/bppoa/excursionstab.png" />
+                                    </li>
+                                    <li>
+                                        <img src="../img/bppoa/excursionanalysis.png" />
+                                    </li>
+                                    <li>
+                                        <img src="../img/bppoa/excursionfilters.png" />
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                                <br> <br>
+
+
+
+
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >Outcome </h3>
+                                <p class="portfoliosectionbody">
+                                  GE Fastworks with design thinking and rapid iterative approach brought customer confidence and satisfaction.
+                                  This win paved the way for a multi-year GE-BP collaboration.
+                                </p>
+
+                            </div>
+
+
+
+
+                           </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                <!--</div>-->
+
+
+
+
+
+           </section>
+
+        </div>
+    </div>
+</body>
+
+</html>

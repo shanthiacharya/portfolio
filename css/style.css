@@ -212,7 +212,7 @@ color: #fff;
 }
 .main-nav li a{
 	display:inline-block;
-	color:#fff;
+	color:#222;
 	text-transform:uppercase;
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
@@ -261,7 +261,31 @@ color: #fff;
     outline: 0;
 }
 
+.top-nav-collapse {
+    /*background-color: rgba(255, 255, 255, 0.97);*/
+    margin-top: 0px;
+    color: #333332;
+    background-color: #ff2132;
+    border-color: #ec6952;
+}
+..top-nav-collapse  .nav .nav-item a{
+    color: #666666;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+}
 
+.top-nav-collapse .nav li .active a {
+    color: #333332 !important;
+}
+
+.top-nav-collapse li a {
+    color: #333332 !important;
+}
+
+.top-nav-collapse .navbar-brand {
+    color: #333332 !important;
+}
 
 /* Services
 ---------------------------------*/
@@ -562,7 +586,7 @@ border: 2px solid #fff;
     padding: 100px 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
-    background:url(../img/aheader-bg.jpg) no-repeat center center scroll;
+    background:url(../img/cheader.jpeg) no-repeat center center scroll;
     background-color: #000;
     background-size: cover;
 
@@ -570,7 +594,7 @@ border: 2px solid #fff;
 .intro {
     display: table;
     width: 100%;
-    height:40em;
+    height:45em;
     padding: 100px 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
@@ -938,10 +962,16 @@ border: 2px solid #fff;
 /* = Next & Back Buttons for Display Page = */
 /* ======================================== */
 .small_caps, .small_caps span, span.caption, .details strong, .thumbnail-title span, p.flex-caption span, #container-tumblr span.caption p, #container-tumblr span.caption p span, #container-tumblr span.caption p a, #container-tumblr span.caption p span a {
-    font-family: Alright Sans Medium, Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    /*font-family: Alright Sans Medium, Helvetica, Arial, sans-serif;*/
+
     letter-spacing:2px;
-    font-size: 7pt;
+    font-size: 10px;
+    display:inline-block;
+    color:#222;
+    text-transform:uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
 }
 a.forward, a.back, a.home {
     position: fixed;
@@ -1021,6 +1051,7 @@ a.home span { position: relative; top: 2px; }
 }
 p.portfoliosectionbody {
 
+    font-family: 'Montserrat', sans-serif;
     color:#000;
     font-weight: 300;
     line-height: 1.6em;
@@ -1034,31 +1065,14 @@ portolioheroimg.img {
     margin: 0 auto;
 }
 
-@media(min-width:767px) {
-    .navbar {
-        padding: 20px 0;
-        border-bottom: 0;
-        background: 0 0;
-        -webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
-        -moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
-        transition: background .3s ease-in-out,padding .3s ease-in-out;
-    }
 
-    .top-nav-collapse {
-        background-color: rgba(255, 255, 255, 0.97);
-        margin-top: 0px;
-        color: #333332;
-    }
-
-    .top-nav-collapse .nav li .active a {
-        color: #333332 !important;
-    }
-
-    .top-nav-collapse li a {
-        color: #333332 !important;
-    }
-
-    .top-nav-collapse .navbar-brand {
-        color: #333332 !important;
-    }
+.navbar {
+    padding: 20px 0;
+    border-bottom: 0;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
+    transition: background .3s ease-in-out,padding .3s ease-in-out;
 }
+
+.voffset { margin-top: 100px; }
