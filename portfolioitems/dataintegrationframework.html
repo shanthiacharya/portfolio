@@ -1,0 +1,269 @@
+<html>
+
+<head>
+    <title>Data Integration | The Design Portfolio of Shanthi Acharya</title>
+
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../favicon.ico" type="img/x-icon">
+
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+    <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css">
+
+
+
+    <!-- Modernizr -->
+    <script src="../js/modernizr.js"></script>
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+            $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+
+            $('.image-link').magnificPopup({type:'image',closeOnContentClick:true});
+
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+                <a class='forward small_caps' href='fieldlineage.html' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+            <a class="home small_caps" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                          <h2>Data Integration Framework</h2>
+                          <h5 style="text-align: center">Self Service Data Integration with Flexibility and Transparency</h5>
+                            <div class="text-center row ">
+                                <!-- splash image -->
+                            <img  src="../img/dataacquistion/connectors.png">
+
+                            </div>
+
+                            <div class="col-lg-6">
+                               <br> <br>
+                                <h3 >Background</h3>
+                                <p class="portfoliosectionbody">
+                                    Workday Prism Analytics is a data hub and analytics platform to acquire, prepare and store data for analysis.  
+                                    Existing data acquisition framework lacked flexibility, transparency and had performance issues. Customers were bringing in high volume and high frequency data which demanded a revamp of the current architecture for data containers.
+
+                                   </p>
+                           </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Goals</h3>
+                                <p class="portfoliosectionbody"> 
+                                    Design the end-to-end experience for a self service data acquisition framework that will enhance data management
+                                     capabilities by providing complete data transparency, data validation,  powerful schema management, fine grained access control and monitoring
+                                </p>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >My Role</h3>
+                                <p class="portfoliosectionbody"> 
+                                    I lead the UX efforts in defining the strategy and roadmap for data integration experience. After the phase1 launch I moved into management.
+                                     I hired and trained designers to work on the subsequent phases of the roadmap. 
+                                    My team co-led several customer workshops along with research team and provided design deliverables and worked with the scrum team until final launch.  
+                                </p>
+
+                             </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+
+                                <div class="portfoliosectionheaders" >APPROACH </div>
+                                <p class="portfoliosectionbody"> 
+                                    <img src="../img/dataacquistion/designprocess.png"/>
+                                </p>
+                            </div>
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders" >Competitive Analysis</div>
+                                <p class="portfoliosectionbody">  
+                                     <img src="../img/dataacquistion/competitveanalysis.png"/>  
+                                 </p>               
+                                      
+                             </div>
+
+                             <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders" >WORKSHOPS </div>
+                                <p class="portfoliosectionbody"> 
+                                    We conducted a Design sprint with cross functional team members with the goal of understanding and provide better problem framing.
+                                    We collected different ideas from the group and converged to create a high level concept designs. 
+ 
+                                    <div class="row">
+                                        <div class="col-md-6"> 
+                                        <img class="designshowcaseimg" src="../img/dataacquistion/workshop/workshop01.png">
+                                        <img class="designshowcaseimg" src="../img/dataacquistion/workshop/workshop03.png">
+                                        <img class="designshowcaseimg" src="../img/dataacquistion/workshop/workshop04.png">
+                                        </div>
+                                        <div class="col-md-6"> 
+                                            <img class="designshowcaseimg" src="../img/dataacquistion/workshop/workshop02.png">
+                                            <img class="designshowcaseimg" src="../img/dataacquistion/workshop/workshop05.png">
+
+                                        </div>
+                                </div>
+                                </p>    
+                            </div>
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders" >CONCEPT DESIGN </div>
+                                <p class="portfoliosectionbody">
+                                    We created concept designs to outline the flow for bringing in data with flexibility and provide a self service experience to our customer without relying on IT teams.
+                                </p> 
+                                    <video width=600 height=400 controls src="../img/dataacquistion/conceptwalkthrough.mov"/>
+                                  
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <p class="portfoliosectionbody">
+                                Our design efforts were broken down into creating experiences for 3 areas: <br/>
+                                1. Ability for users to create a table from various sources <br/>
+                                2. Users can bring in data from external sources to the table for various use cases such as deleting, updating, upserting etc.,<br/>
+                                3. Create reusable connections and activity monitoring and integrate with the data catalog.<br/><br/>
+                                </p>
+                                <div class="portfoliosectionheaders" >  Creating a Table from different Data Sources </div>
+                                    <div class="row">
+                                            <div class="col-md-6"> 
+                                            <img class="designshowcaseimg" src="../img/dataacquistion/createtableflow/01- CreateTable.jpg">
+                                            <img class="designshowcaseimg" src="../img/dataacquistion/createtableflow/03- CreateTable.jpg">
+                                            <img class="designshowcaseimg" src="../img/dataacquistion/createtableflow/05- CreateTable.jpg">
+                                            </div>
+                                            <div class="col-md-6"> 
+                                                <img class="designshowcaseimg" src="../img/dataacquistion/createtableflow/02-CreateTable.jpg">
+                                                <img class="designshowcaseimg" src="../img/dataacquistion/createtableflow/04- CreateTable.png">
+                                                <img class="designshowcaseimg" src="../img/dataacquistion/createtableflow/06- CreateTable.jpg">
+                                            </div>
+                                    </div>
+                               </div>
+
+                               <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders" >  Data Operations: Data Change Task </div>
+                          
+                                 <a class="image-link" href="../img/dataacquistion/dctflow/dctoverall.png"><img class="image-link"  src="../img/dataacquistion/dctflow/dctoverall.png"></a>
+
+                               </div>
+                               
+                               <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders"> System Thinking: Object Modelling   </div>
+                                <p class="portfoliosectionbody"> We had to consider the overall system and how the new connection object will interact with other objects in the catalog.  
+                                    By providing a system view we communicated the behavior and interaction with other data catalog objects.
+                                </p>
+                                 <a class="image-link" href="../img/dataacquistion/objectmodellingdiagram.png"><img class="image-link"  src="../img/dataacquistion/objectmodellingdiagram.png"></a>
+                                 <p class="portfoliosectionbody"> 
+                                    Connections provides reusability and flexibility in configuration of various data sources.
+                                </p>
+                                 <div class="col-md-6"> 
+                                    <img class="designshowcaseimg" src="../img/dataacquistion/dctflow/connection1.png">
+                                </div>
+                                <div class="col-md-6"> 
+                                   <img class="designshowcaseimg" src="../img/dataacquistion/dctflow/connection2.png">
+                               </div>
+                                       
+                               </div>
+                                
+
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders" >OUTCOME </div>
+                                <p class="portfoliosectionbody"> 
+                                    Tables is the #1 strategic project and the future of much of the Workday 
+                                    Analytics Data platform and applications built on top of it.
+                                    By providing a strong foundation and self service analytics features we improved the customer satisfaction and adoption of our product and platform.
+                                </p>    
+
+                            </div>
+
+                            
+
+                           </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                <!--</div>-->
+
+
+
+
+
+           </section>
+
+        </div>
+    </div>
+</body>
+
+</html>

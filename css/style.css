@@ -586,7 +586,7 @@ border: 2px solid #fff;
     padding: 100px 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
-    background:url(../img/cheader.jpeg) no-repeat center center scroll;
+    background:url(../img/billy-unsplash.jpg) no-repeat center center scroll;
     background-color: #000;
     background-size: cover;
 
@@ -598,7 +598,7 @@ border: 2px solid #fff;
     padding: 100px 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
-    background:url(../img/cheader.jpeg) no-repeat center center scroll;
+    background:url(../img/vino-li-gGX1fJkmw3k-unsplash.jpg) no-repeat center center scroll;
     background-color: #000;
     background-size: cover;
 
@@ -1057,7 +1057,7 @@ p.portfoliosectionbody {
     line-height: 1.6em;
     margin-bottom: 5px;
     margin-top: 15px;
-    font-size:16px;
+    font-size:16px; 
 
 }
 portolioheroimg.img {
@@ -1076,3 +1076,7 @@ portolioheroimg.img {
 }
 
 .voffset { margin-top: 100px; }
+
+.designshowcaseimg {
+	padding:10px;
+}

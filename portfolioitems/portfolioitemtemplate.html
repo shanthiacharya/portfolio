@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <title>AllRegs | The Design Portfolio of Shanthi Acharya</title>
+
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../favicon.ico" type="img/x-icon">
+
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+    <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css">
+
+
+
+    <!-- Modernizr -->
+    <script src="../js/modernizr.js"></script>
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+            $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+
+            $('.image-link').magnificPopup({type:'image',closeOnContentClick:true});
+
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+                <a class='forward small_caps' href='partsnap.html' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+            <a class="home small_caps" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                          <h2>Project Name</h2>
+                          <h5 style="text-align: center">Brief Description</h5>
+                            <div class="text-center row ">
+                                <!-- splash image -->
+                            <!-- <img  src="../img/allregs/allregssplashscreen.png"> -->
+
+                            </div>
+
+                            <div class="col-lg-6">
+                               <br> <br>
+                                <h3 >Background</h3>
+                                <p class="portfoliosectionbody">
+ 
+                                   </p>
+                           </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Solution</h3>
+                                <p class="portfoliosectionbody"> 
+                                </p>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >My Role</h3>
+                                <p class="portfoliosectionbody"> Design Leadership, Wireframing, Visual Design and Prototyping, Collaboration with product owners and engineering teams.
+                                </p>
+
+                             </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+
+                                <div class="portfoliosectionheaders" >APPROACH </div>
+                                <p class="portfoliosectionbody"> Our approach was broken down into 4 phases:<br/>
+
+
+                                  
+                                  </p>
+
+                            </div>
+
+                            
+
+
+
+
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders" >OUTCOME </div>
+                                <p class="portfoliosectionbody"> Showcasing the responsive design and ability to view across multidevice with a modern user experience played a key role in getting customer wins for new subscription and renewal of existing subscription.
+                                  Prototype and mockups were demoed to several customers and partners during conferences and workgroup meetings which served as a great selling tool.
+
+                            </div>
+
+
+                           </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                <!--</div>-->
+
+
+
+
+
+           </section>
+
+        </div>
+    </div>
+</body>
+
+</html>

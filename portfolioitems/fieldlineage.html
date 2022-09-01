@@ -1,0 +1,354 @@
+<html>
+
+<head>
+    <title>Data and Field Lineage | The Design Portfolio of Shanthi Acharya</title>
+
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../favicon.ico" type="img/x-icon">
+
+
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+    <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css">
+
+
+
+    <!-- Modernizr -->
+    <!-- <script src="../js/modernizr.js"></script> -->
+
+    <!-- ========== -->
+    <!-- = JQuery = -->
+    <!-- ========== -->
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+   <!-- Magnific Popup core JS file -->
+   <script src="../js/jquery.magnific-popup.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+
+            $('.back span').delay(5000).fadeTo(600, 0);
+            $('.forward span').delay(5000).fadeTo(600, 0);
+            $('.home span').delay(5000).fadeTo(600, 0);
+
+            $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 1) {
+                        $('.forward span').delay(0).fadeTo(600, 1);
+                    }
+                }
+
+                if($(window).scrollTop() + $(window).height() < $(document).height() - 500) {
+                    if($('.forward span').css('opacity') != 0) {
+                        $('.forward span').delay(0).fadeTo(600, 0);
+                    }
+                }
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                    $('body').removeClass('loading');
+                }
+            });
+
+            // Arrow Key Press Navigation for Next & Back
+            $(document).keydown(function(e){
+                if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
+                } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
+            });
+            
+            $('.image-link').magnificPopup({type:'image',closeOnContentClick:true});
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+
+<div id="container">
+    <div id="container-content">
+        <div id="container-center" class="clearfix">
+
+
+
+            <a class='back small_caps' href='dataintegrationframework.html' alt='Previous Project'><div></div><span>Previous</span><br><span>Project</span></a><a class='forward small_caps' href='allregs.html' alt='Next Project'><div></div><span>Next</span><br><span>Project</span></a>
+            <a class="home small_caps" href="../index.html" alt="Homepage"><div></div><span>Homepage</span></a>
+
+
+
+            <section class="main-section paddind " id="client"><!--main-section client-part-start-->
+                <div class="container">
+                    <!--<b class="quote-right wow fadeInDown delay-03"><i class="fa-quote-right"></i></b>-->
+
+                    <div class="row">
+                        <div class=" col-lg-12  ">
+                            <h2>Lineage</h2>
+                            <h5 style="text-align: center"> Solving a Complex problem with Design Thinking and Agile Methodology </h5>
+
+                            <div class="text-center row ">
+            
+                            <img src="../img/lineage/fieldlineagehero.png"/>
+
+                            </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Background</h3>
+                                <p class="portfoliosectionbody">
+                                  Workday Analytics customers want end-to-end visibility of the data origin and what transformation happens to it
+                                  and how it gets used. Data Lineage provides a way to understand where the data is coming from and where it is going. Datasets can have fields with complex logic.
+                                   Enterprise users needs to understand:<br/>
+                                  1. Where the field originates from <br/> 
+                                  2. What transformations and calculations are applied  <br/> 
+                                  3. Dependency from both upstream and downstream in the lineage.<br/> 
+                                  This is useful to understand the impact of the changes to the field logic to root cause issues, adapt to business changes and data governance.<br/> 
+                                </p>
+
+                            </div>
+
+                            <div class="col-lg-6">
+                                <br> <br>
+                                <h3 >Goals</h3>
+                                <p class="portfoliosectionbody">
+                                    Our goal is to make it easy for the user to quickly find a field and present a visual flow of the field along with transformations and calculations happened leading upto the origin. 
+                                     find and change field logic and involves manual maintenance in an external spreadsheet.
+                                </p>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <h3 >My Role</h3>
+                                <p class="portfoliosectionbody"> Design Strategy, Competitive Evaluation, Research Participation, Customer Engagement, Onbaording and Managing 2 designers.
+                                    
+                                </p>
+
+                             </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+
+                                <div class="portfoliosectionheaders" >Approach</div>
+                                <p class="portfoliosectionbody"> 
+                                    Understand pipeline maintenance use cases and how our customers are currently maintaning and updating field logic.  Create concept designs and rapid iterative testing to refine the designs.
+                                </p>     
+                            </div>
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders" >Personas & Scenarios</div>
+                                <p class="portfoliosectionbody"> 
+                                    <img src="../img/lineage/Personas and Use Cases.png"/>
+                                </p>
+                             </div>
+
+                             <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders" >Process</div>
+        
+                                <p class="portfoliosectionbody"> 
+                                    <img src="../img/lineage/fieldlineageprocess.png"/>
+                                </p>
+                             </div>
+
+                             <div class="col-lg-12">
+                                <br> <br>
+                                
+                                <div class="portfoliosectionheaders" > Competitve Audit</div>
+                    
+                                <p class="portfoliosectionbody"> 
+                                    We evaluated applications to understand  the mental model and existing approaches for navigating to a field origin
+                                     from both direct and indirect competitors. <br/>
+           
+
+                                    <div class="col-md-6"> 
+                                        <p class="portfoliosectionbody">           
+                                      Decomposition Tree visual in Power BI lets you visualize data across multiple dimensions and enables drilling down into your dimensions 
+                                        in any order. We were envisioning similar interactions for drillling down into a field.<img src="../img/lineage/audit-1 -pbi-rrot cause.png"/></div>
+                                   <div class="col-md-6">
+                                    <p class="portfoliosectionbody">
+                                    Cloud Data Fusion field level lineage shows the relationship between the fields of a dataset and the transformations 
+                                    that were performed on a set of fields to produce a different set of fields.</p>
+                                       
+                                    <img src="../img/lineage/audit-2-gcp-cdap.png"/></div>
+                                
+                                </p>
+                             </div>
+
+                             <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders">Phase 1 - Concept Testing</div>
+                                   
+                                <p class="portfoliosectionbody"> 
+                                    The goals of our concept testing was to determine the user mental model in 
+                                    navigating fields both upstream and downstream in their pipeline. We wanted to assess the usabiliy of the proposed UI,
+                                     navigation and information architecture. <br/> <br/>
+                                     This study helped us answer questions such as:  <br/> 
+                                     1. Where does the user search for fields?<br/>
+                                     2. Does the user understand the flow of the field through various stages and datasets in the pipeline?<br/>
+                                     3. Does the user understand what transformations or calculations were applied to the field?<br/>
+                                     4. Can the user get to the origin of the fields? <br/>
+                                     4. Can the user understand how the field it is used downstream?<br/>
+                                     5. Is the user able to identify the errors in the fields<br/> <br/>
+                                 </p>
+                                    
+                            </div>
+                                   <div class="row">
+                                    <div class="col-md-6"> <p class="portfoliosectionbody"> Concept for Highlighting related nodes for a field </p>
+                                        <a class="image-link" href="../img/lineage/fieldlineageconcepttesting.png"><img class="image-link"  src="../img/lineage/fieldlineageconcepttesting.png"></a>
+                                    </div>
+                                    <div class="col-md-6"> <p class="portfoliosectionbody">  Field Lineage Map </p> 
+                                    <a class="image-link" href="../img/lineage/fieldlineageconcepttesting-lmap.png"><img class="image-link"  src="../img/lineage/fieldlineageconcepttesting-lmap.png"></a>
+                                    </div>
+
+                                   </div>
+                                   <div class="row">
+                                   
+                                    <div class="col-md-6"> <p class="portfoliosectionbody"> Search Fields and Datasets </p>
+                                    <a class="image-link" href="../img/lineage/fieldlineageconcepttesting-search.png"><img class="image-link"  src="../img/lineage/fieldlineageconcepttesting-search.png"></a>
+                                   </div>
+                                    <div class="col-md-6"> <p class="portfoliosectionbody"> Display Field Errors</p> 
+                                    <a class="image-link" href="../img/lineage/fieldlineageconcepttesting-error.png"><img class="image-link"  src="../img/lineage/fieldlineageconcepttesting-error.png"></a>
+                                    </div>
+                                </div>
+                                
+                                   <p class="portfoliosectionbody"> Insights from concept testing <br/>
+
+                                    1.Blue line highlighted in the dataset lineage guided the user and was useful in understanding related nodes.<br/>
+                                    2.Accessibility was easy and intuitive to the field lineage from the inspector panel.<br/>
+                                    3.Left to Right flow was easy to understand the direction of upstream and downstream flow (similar to data lineage. <br/>
+                                    4.Different persona may use different entry points such as Data Catalog or Lineage and also depends on the question. <br/>
+                                    5.Biggest learning was that customers can have very complicated pipeline and the current approach of stacking fields cannot scale.
+                                </p>
+
+                              
+                                </div>
+
+
+                             <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders">Constraints</div>
+
+                                
+                                   <div class="col-md-12"> 
+                                    <p class="portfoliosectionbody"> 
+                                        We had 2 main set of challenges coming from <br/>
+                                      <b> 1. Big data and enterprise production environments:  </b> <br/>
+                                          a.Complexity of the relations between fields and large schemas <br/>
+                                          b.Scaling design to large number of fields<br/>
+                                          c.Variability in dependencies<br/>
+                                    </p>
+                                     <p class="portfoliosectionbody">
+                                       <b> 2.System and Performance Constraints:  </b><br/>
+                                       a.Users can view only one branch at a time due to backend limitation<br/>
+                                       b.User needs to select a node to drill down whenever there is a forking condition or multiple pathways <br/>
+                                       c.Avoid overload of information and show only events of interest for the user<br/>
+                                       d.Drawing library had limited functionality and redrawing dynamic changes were hard<br/>
+                                     </p>
+                                
+                                  </div>
+                           
+                                </div> 
+                             </div>
+
+                             <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders">Embracing Constraints and TACKLING CHALLENGES</div>
+                                <p class="portfoliosectionbody"> 
+                                    Scenario based Prototyping <br/>
+                                    <p class="portfoliosectionbody">
+                                        We analyzed our customer pipeline configurations and choose the top 3 scenarios 
+                                        that will cover a wide range of use cases. <br/>
+                                        We created shared terminology so the teams can refer the interaction behavior and 
+                                        generalized the behavior with rules that can apply to various scenarios.</p>
+                              
+                                </div> 
+
+
+                            
+
+
+
+                             <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders" >Speed up with Figma Components</div>
+                                <p class="portfoliosectionbody"> 
+                                    Creating reusable components allowed us to quickly design  the various scenarios and get iterative feedback and refine the designs. <br/> <br/>
+                                    <img src="../img/lineage/Figma Components.png"/>
+                                    
+                                </p>
+                             </div>
+                             <div class="col-lg-12">
+                                <br> <br>
+                                <h3 > Final Prototype</h3>
+                                <p class="portfoliosectionbody"> 
+                                    <video width=600 height=400 controls src="../img/lineage/FieldLineagePrototype.mp4"/>
+                                </p>
+                             </div>
+
+                             <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders">Phased Delivery</div>
+                                <p class="portfoliosectionbody">
+                                    We took a phased approach by delivering continuous value to customers by breaking this 
+                                    into a multi release feature.
+                                </p>
+                            </div> 
+                            
+                            <div class="col-lg-12">
+                               <div class="portfoliosectionheaders">Feedback from Customers</div>
+                                <blockquote class="blockquote-reverse">
+                                    <p class="portfoliosectionbody">"That looks good. That's really, really great. 
+                                        I think  it would definitely help me. Right now how we do it is with a rough manual process. 
+                                        I can’t wait to get this feature soon."</p>
+                                    <footer> <cite title="Source Title">Unum.</cite></footer>
+                                </blockquote>
+                                <blockquote>
+                                    <p class="portfoliosectionbody"> This has been hugely popular with our customers as this capability allows you to go back from reports and understand what exactly went through in that life cycle of that data. 
+                                        Very helpful in audit scenarios to understand what you're looking at from your reports and dashboards. </p>
+                                    <footer> <cite title="Source Title">Workday Analytics Senior Director PM Stakeholder.</cite></footer>
+                                </blockquote>
+                                
+                        </div> 
+
+                            <div class="col-lg-12">
+                                <br> <br>
+                                <div class="portfoliosectionheaders">Reflections</div>
+                                <p class="portfoliosectionbody">
+                                   Journey on this project has been extremely challenging initially exacerbated with the onset of pandemic. New paradigms has to be established to embrace constraints and tackling complexity. 
+                                    By focussing on real world scenarios and coming up with shared terminology and rules we were able to simplify and successfully deliver this feature to our analytics customers. 
+                                    
+                                </p>
+                            </div>  
+
+
+                           </div>
+
+
+
+                        </div>
+                    </div>
+
+
+           
+
+
+
+
+
+           </section>
+
+        </div>
+    </div>
+</body>
+
+</html>

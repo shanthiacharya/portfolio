@@ -13,7 +13,7 @@
     <link href="../css/responsive.css" rel="stylesheet" type="text/css">
     <link href="../css/animate.css" rel="stylesheet" type="text/css">
     <link href="../css/flexslider.css" rel="stylesheet" type="text/css">
-
+    <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css">
 
 
     <!-- Modernizr -->
@@ -26,7 +26,8 @@
     <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
     <script type="text/javascript" src="../js/jquery.flexslider.js"></script>
-
+    <!-- Magnific Popup core JS file -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
 
 
     <script>
@@ -62,6 +63,8 @@
                 if (e.keyCode==39) { window.location=$(".forward").attr("href"); return false;
                 } else if (e.keyCode==37) {	window.location=$(".back").attr("href"); return false; }
             });
+            $('.image-link').magnificPopup({type:'image',closeOnContentClick:true});
+
         });
     </script>
 </head>
@@ -177,7 +180,9 @@
                                 <ul class="slides ">
 
                                   <li>
-                                      <img src="../img/bppoa/bppoadashboard.png" />
+                                    <a class="image-link" href="../img/bppoa/bppoadashboard.png"><img class="image-link"  src="../img/bppoa/bppoadashboard.png"></a>
+
+                                      <!-- <img src="../img/bppoa/bppoadashboard.png" /> -->
                                   </li>
 
                                   <li>
